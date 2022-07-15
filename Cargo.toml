@@ -1,0 +1,17 @@
+[package]
+name = "actix-mongo-api"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.1.0"
+dotenv = "0.15.0"
+futures = "0.3.21"
+serde = "1.0.139"
+
+[dependencies.mongodb]
+version = "2.2.2"
+default-features = false
+features = ["async-std-runtime"] 
